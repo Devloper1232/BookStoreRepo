@@ -1,1 +1,1 @@
-# BookStoreRepo
+# This is a test project to learn how to work with git and asp.net mvc
