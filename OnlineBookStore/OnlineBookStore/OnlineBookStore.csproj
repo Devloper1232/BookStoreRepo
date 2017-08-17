@@ -172,13 +172,9 @@
     <Compile Include="Migrations\201707261320317_InitialCreate.Designer.cs">
       <DependentUpon>201707261320317_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708171422205_initialDB.cs" />
-    <Compile Include="Migrations\201708171422205_initialDB.Designer.cs">
-      <DependentUpon>201708171422205_initialDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708171432205_initialDBCorrection.cs" />
-    <Compile Include="Migrations\201708171432205_initialDBCorrection.Designer.cs">
-      <DependentUpon>201708171432205_initialDBCorrection.cs</DependentUpon>
+    <Compile Include="Migrations\201708171450295_initialDB.cs" />
+    <Compile Include="Migrations\201708171450295_initialDB.Designer.cs">
+      <DependentUpon>201708171450295_initialDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -248,11 +244,8 @@
     <EmbeddedResource Include="Migrations\201707261320317_InitialCreate.resx">
       <DependentUpon>201707261320317_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708171422205_initialDB.resx">
-      <DependentUpon>201708171422205_initialDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708171432205_initialDBCorrection.resx">
-      <DependentUpon>201708171432205_initialDBCorrection.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708171450295_initialDB.resx">
+      <DependentUpon>201708171450295_initialDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

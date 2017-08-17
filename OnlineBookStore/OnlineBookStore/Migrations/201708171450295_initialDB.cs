@@ -13,6 +13,7 @@ namespace OnlineBookStore.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
+                        Description = c.String(),
                         Author = c.String(),
                         Publication = c.String(),
                         Price = c.Double(nullable: false),
@@ -20,6 +21,7 @@ namespace OnlineBookStore.Migrations
                         CategoryId = c.Int(nullable: false),
                         ReleaseDate = c.DateTime(nullable: false),
                         ImageUrl = c.String(),
+                        PreviewUrl = c.String(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Categories", t => t.CategoryId, cascadeDelete: true)

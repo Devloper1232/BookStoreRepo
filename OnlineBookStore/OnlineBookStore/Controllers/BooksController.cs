@@ -11,6 +11,8 @@ using OnlineBookStore.Models;
 
 namespace OnlineBookStore.Controllers
 {
+    [Authorize(Roles="Admin")]
+    [ValidateInput(false)] 
     public class BooksController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -49,7 +51,7 @@ namespace OnlineBookStore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include="Id,Name,Description,Author,Publication,Price,UnitsAvailable,CategoryId,ReleaseDate,ImageUrl")] Book book)
+        public async Task<ActionResult> Create([Bind(Include="Id,Name,Description,Author,Publication,Price,UnitsAvailable,CategoryId,ReleaseDate,ImageUrl,PreviewUrl")] Book book)
         {
             if (ModelState.IsValid)
             {
@@ -83,7 +85,7 @@ namespace OnlineBookStore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include="Id,Name,Description,Author,Publication,Price,UnitsAvailable,CategoryId,ReleaseDate,ImageUrl")] Book book)
+        public async Task<ActionResult> Edit([Bind(Include="Id,Name,Description,Author,Publication,Price,UnitsAvailable,CategoryId,ReleaseDate,ImageUrl,PreviewUrl")] Book book)
         {
             if (ModelState.IsValid)
             {

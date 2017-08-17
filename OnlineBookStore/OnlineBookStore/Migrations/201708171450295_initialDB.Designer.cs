@@ -7,13 +7,13 @@ namespace OnlineBookStore.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class initialDBCorrection : IMigrationMetadata
+    public sealed partial class initialDB : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initialDBCorrection));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initialDB));
         
         string IMigrationMetadata.Id
         {
-            get { return "201708171432205_initialDBCorrection"; }
+            get { return "201708171450295_initialDB"; }
         }
         
         string IMigrationMetadata.Source

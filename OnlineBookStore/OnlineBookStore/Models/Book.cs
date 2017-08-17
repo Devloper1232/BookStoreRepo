@@ -20,6 +20,7 @@ namespace OnlineBookStore.Models
         public int CategoryId { get; set; }
         public DateTime ReleaseDate { get; set; }
         public string ImageUrl { get; set; }
+        public string PreviewUrl { get; set; }
 
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
