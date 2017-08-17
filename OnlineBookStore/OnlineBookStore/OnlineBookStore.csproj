@@ -163,6 +163,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -174,6 +175,10 @@
     <Compile Include="Migrations\201708171422205_initialDB.cs" />
     <Compile Include="Migrations\201708171422205_initialDB.Designer.cs">
       <DependentUpon>201708171422205_initialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708171432205_initialDBCorrection.cs" />
+    <Compile Include="Migrations\201708171432205_initialDBCorrection.Designer.cs">
+      <DependentUpon>201708171432205_initialDBCorrection.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -233,6 +238,11 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Books\Create.cshtml" />
+    <Content Include="Views\Books\Delete.cshtml" />
+    <Content Include="Views\Books\Details.cshtml" />
+    <Content Include="Views\Books\Edit.cshtml" />
+    <Content Include="Views\Books\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201707261320317_InitialCreate.resx">
@@ -240,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708171422205_initialDB.resx">
       <DependentUpon>201708171422205_initialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708171432205_initialDBCorrection.resx">
+      <DependentUpon>201708171432205_initialDBCorrection.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
